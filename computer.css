@@ -8,7 +8,18 @@ appearance: none;
 
 body {
   background-color: #fcf8f7;
+  font-family: Tahoma; 
 }
+
+h3{
+  font-size: 18px;
+}
+
+p {
+  font-family: Tahoma;
+  font-size: 14px;
+}
+
 
 table {
   margin: auto;
@@ -31,7 +42,8 @@ input {
   height: 50px;
   float: left;
   margin: 5px;
-  font-size: 20px;
+  font-size: 25px;
+  font-family: Tahoma; 
   margin-bottom: 15px;
 }
 
@@ -43,7 +55,7 @@ input:hover {
   height: 50px;
   float: left;
   margin: 5px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 input:active {
@@ -56,7 +68,34 @@ input:active {
   height: 50px;
   float: left;
   margin: 5px;
-  font-size: 20px;
+  font-size: 25px;
+}
+
+button {
+  outline: 0;
+  position: relative;
+  color: black;
+  background-color: #f0bbde;
+  border: 0;
+  border-radius: 4px;
+  float: left;
+  width: 140px;
+  height: 30px;
+  margin: 5px;
+  font-size: 16px;
+  font-family: Tahoma; 
+  margin-bottom: 15px; 
+}
+
+button:active {
+  color: black;
+  background-color: #f5aedd;
+  border-radius: 4px;
+  width: 140px;
+  height: 30px;
+  float: left;
+  margin: 5px;
+  font-size: 16px;
 }
 
 #display {
@@ -79,12 +118,12 @@ input:active {
 }
 
 .operator {
-  background-color: lightgrey;
+  background-color: #f5c8ae;
   position: relative;
 }
 
 .operator:hover {
-  background-color: lightgrey;
+  background-color: #f5c8ae;
 }
 
 .operator:active {
