@@ -49,16 +49,12 @@ recognition.onnomatch = function() {
 
 recognition.onresult = function(event) {
   var expression = event.results[0][0].transcript;
-  if(expression.toLowerCase() =="clear"){
-  	calculator.display.value = '';
-  }
   expression = expression.replace(/\s/g, '');
   calculator.display.value = expression;
+  calculator.display.value = eval(calculator.display.value);
   var spokenOutput = new SpeechSynthesisUtterance(result.value);
   spokenOutput.pitch = 1;
   spokenOutput.rate = 1;
-  synth.speak(spokenOutput);
-  calculator.display.value = eval(calculator.display.value);
   synth.speak(spokenOutput);
 
 }
