@@ -6,9 +6,6 @@ body {
 table {
   margin: auto;
   background-color: grey;
-  width: 295px;
-  max-width: 295px;
-  height: 325px;
   text-align: center;
   border-radius: 4px;
   padding-right: 10px;
