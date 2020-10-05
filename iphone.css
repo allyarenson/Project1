@@ -1,6 +1,13 @@
 @media screen and (max-width: 480px) {
+
+input {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+
 body {
-  background-color: lightyellow;
+  background-color: #fcf8f7;
 }
 
 table {
@@ -12,18 +19,12 @@ table {
 }
 
 input {
--webkit-appearance: none;
--moz-appearance: none;
-appearance: none;
-}
-  
-input {
   outline: 0;
   position: relative;
   left: 5px;
   top: 5px;
   border: 0;
-  color: #495069;
+  color: black;
   background-color: #fff;
   border-radius: 4px;
   width: 60px;
@@ -35,8 +36,7 @@ input {
 }
 
 input:hover {
-  border: 0 solid #000;
-  color: #495069;
+  color: black;
   background-color: #fff;
   border-radius: 4px;
   width: 60px;
@@ -49,7 +49,7 @@ input:hover {
 input:active {
   top: 4px;
   border: 0 solid #000;
-  color: #495069;
+  color: black;
   background-color: #fff;
   border-radius: 4px;
   width: 60px;
@@ -60,20 +60,22 @@ input:active {
 }
 
 #display {
-  width: 265px;
+  width: 275px;
   max-width: 270px;
   font-size: 26px;
   text-align: right;
-  background-color: #bcbd95;
+  color: black;
+  background-color: #dfeba7;
   float: left;
 }
 
 #display:active {
   top: 5px;
-  width: 270px;
+  width: 275px;
   font-size: 26px;
+  color: black;
   text-align: right;
-  background-color: #bcbd95;
+  background-color: #dfeba7;
 }
 
 .operator {
@@ -93,14 +95,14 @@ input:active {
   float: left;
   position: relative;
   display: block;
-  background-color: #a093c4;
+  background-color: #bb9ae3;
 }
 
 #equal {
   float: left;
   position: relative;
   display: block;
-  background-color: #93b2c4;
+  background-color: #a7ebe2;
 }
 
 }
