@@ -2,24 +2,21 @@
 <html>
 <head>
 	<title>Project 1</title>
-	<link rel="stylesheet" media="all and (min-device-width: 480px)" href="portrait.css">
-	<link rel="stylesheet" media="all and (max-device-width: 480px)" href="iphone.css"> 
-	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="portrait.css">
 </head>
+<p>Instructions: Either use the cursor to press the buttons on the calculator, type directly into the text field, or press the "Start Listening" button to speak a command.</p>
+<p>Example Commands: "2 plus 5", "300 divided by 6", "5.7 times 6.8"</p>
+<p>Note: If using voice input, calculator will automatically calculate the expression and show the output in the text field.</p>
 <body>
-   <body>
-      <form name="calculator">
+      <form name="calculator" autocomplete="off">
          <table>
             <tr>
                <td colspan="4">
-                  <input type="text" name="display" id="display" disabled>
+                  <input type="text" name="display" id="display" >
                </td>
             </tr>
             <tr>
-               <td><input type="button" class="operator" name="paranthese" value="(" onclick="calculator.display.value += '('"></td>
-               <td><input type="button" class="operator" name="paranthese" value=")" onclick="calculator.display.value += ')'"></td>
-               <td><input type="button" class="operator" name="percent" value="%" onclick="calculator.display.value = eval(calculator.display.value / 100)"></td>
-               <td><input type="button" id="clear" name="clear" value="AC" onclick="calculator.display.value = ''"></td>
+               <td><input type="button" id="clear" name="clear" value="Clear" onclick="calculator.display.value = ''"></td>
             </tr>
             <tr>
                <td><input type="button" name="seven" value="7" onclick="calculator.display.value += '7'"></td>
@@ -47,8 +44,12 @@
             </tr>
          </table>
       </form>
-   </body>
+      <br>
+      <br>
+   <button id="speechButton">Start Listening</button>
+   <p id="listenAlert"></p>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="calculator.js"></script>
 </html>
 </html>
