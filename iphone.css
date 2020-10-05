@@ -12,6 +12,12 @@ table {
 }
 
 input {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+  
+input {
   outline: 0;
   position: relative;
   left: 5px;
