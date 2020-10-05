@@ -11,6 +11,9 @@
 <p>Example Commands: "2 plus 5", "300 divided by 6", "5.7 times 6.8"</p>
 <p>Note: If using voice input, calculator will automatically calculate the expression and show the output in the text field.</p>
 <body>
+   <button id="speechButton">Start Listening</button>
+   <p id="listenAlert"></p>
+	<br>
       <form name="calculator" autocomplete="off">
          <table>
             <tr>
@@ -19,7 +22,7 @@
                </td>
             </tr>
             <tr>
-               <td><input type="button" id="clear" name="clear" value="Clear" onclick="calculator.display.value = ''"></td>
+               <td><input type="button" id="clear" name="clear" value="AC" onclick="calculator.display.value = ''"></td>
             </tr>
             <tr>
                <td><input type="button" name="seven" value="7" onclick="calculator.display.value += '7'"></td>
@@ -47,10 +50,6 @@
             </tr>
          </table>
       </form>
-      <br>
-      <br>
-   <button id="speechButton">Start Listening</button>
-   <p id="listenAlert"></p>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="calculator.js"></script>
