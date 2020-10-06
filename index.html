@@ -6,11 +6,13 @@
    <link rel="stylesheet" media="all and (max-device-width: 480px)" href="iphone.css"> 
    <meta name="viewport" content="width=device-width">
 </head>
-<h1>Instructions</h1>
-<p>Either use the cursor to press the buttons on the calculator, type directly into the text field, or press the "Start Listening" button to speak a command.</p>
-<p>Example Commands: "2 plus 5", "300 divided by 6", "5.7 times 6.8"</p>
-<p>Note: If using voice input, calculator will automatically calculate the expression and show the output in the text field.</p>
+
 <body>
+   <main>
+   <h1>Instructions</h1>
+   <p>Either use the cursor to press the buttons on the calculator, type directly into the text field, or press the "Start Listening" button to speak a command.</p>
+   <p>Example Commands: "2 plus 5", "300 divided by 6", "5.7 times 6.8"</p>
+   <p>Note: If using voice input, calculator will automatically calculate the expression and show the output in the text field.</p>
    <button id="speechButton">Start Listening</button>
    <p id="listenAlert"></p>
 	<br>
@@ -18,38 +20,39 @@
          <table>
             <tr>
                <td colspan="4">
-                  <input type="text" name="display" id="display" >
+                  <input type="text" name="display" id="display" aria-label="Input">
                </td>
             </tr>
             <tr>
-               <td><input type="button" id="clear" name="clear" value="AC" onclick="calculator.display.value = ''"></td>
+               <td><input type="button" id="clear" name="clear" value="AC" aria-label="Clear" onclick="calculator.display.value = ''"></td>
             </tr>
             <tr>
-               <td><input type="button" name="seven" value="7" onclick="calculator.display.value += '7'"></td>
-               <td><input type="button" name="eight" value="8" onclick="calculator.display.value += '8'"></td>
-               <td><input type="button" name="nine" value="9" onclick="calculator.display.value += '9'"></td>
-               <td><input type="button" class="operator" name="divide" value="/" onclick="calculator.display.value += '/'"></td>
+               <td><input type="button" name="seven" value="7" aria-label="7" onclick="calculator.display.value += '7'"></td>
+               <td><input type="button" name="eight" value="8" aria-label="8" onclick="calculator.display.value += '8'"></td>
+               <td><input type="button" name="nine" value="9" aria-label="9" onclick="calculator.display.value += '9'"></td>
+               <td><input type="button" class="operator" name="divide" value="/" aria-label="divided by" onclick="calculator.display.value += '/'"></td>
             </tr>
             <tr>
-               <td><input type="button" name="four" value="4" onclick="calculator.display.value += '4'"></td>
-               <td><input type="button" name="five" value="5" onclick="calculator.display.value += '5'"></td>
-               <td><input type="button" name="six" value="6" onclick="calculator.display.value += '6'"></td>
-               <td><input type="button" class="operator" name="times" value="x" onclick="calculator.display.value += '*'"></td>
+               <td><input type="button" name="four" value="4" aria-label="4" onclick="calculator.display.value += '4'"></td>
+               <td><input type="button" name="five" value="5" aria-label="5" onclick="calculator.display.value += '5'"></td>
+               <td><input type="button" name="six" value="6" aria-label="6" onclick="calculator.display.value += '6'"></td>
+               <td><input type="button" class="operator" name="times" value="x" aria-label="times" onclick="calculator.display.value += '*'"></td>
             </tr>
             <tr>
-               <td><input type="button" name="one" value="1" onclick="calculator.display.value += '1'"></td>
-               <td><input type="button" name="two" value="2" onclick="calculator.display.value += '2'"></td>
-               <td><input type="button" name="three" value="3" onclick="calculator.display.value += '3'"></td>
-               <td><input type="button" class="operator" name="minus" value="-" onclick="calculator.display.value += '-'"></td>
+               <td><input type="button" name="one" value="1" aria-label="1" onclick="calculator.display.value += '1'"></td>
+               <td><input type="button" name="two" value="2" aria-label="2" onclick="calculator.display.value += '2'"></td>
+               <td><input type="button" name="three" value="3" aria-label="3" onclick="calculator.display.value += '3'"></td>
+               <td><input type="button" class="operator" name="minus" value="-" aria-label="minus" onclick="calculator.display.value += '-'"></td>
             </tr>
             <tr>
-               <td><input type="button" name="zero" value="0" onclick="calculator.display.value += '0'"></td>
-               <td><input type="button" name="decimal" value="." onclick="calculator.display.value += '.'"></td>
-               <td><input type="button" id="equal" name="equal" value="=" onclick="calculator.display.value = eval(calculator.display.value)"></td>
-               <td><input type="button" class="operator" name="plus" value="+" onclick="calculator.display.value += '+'"></td>
+               <td><input type="button" name="zero" value="0" aria-label="0" onclick="calculator.display.value += '0'"></td>
+               <td><input type="button" name="decimal" value="." aria-label="decimal point" onclick="calculator.display.value += '.'"></td>
+               <td><input type="button" id="equal" name="equal" value="=" aria-label="equals" onclick="calculator.display.value = eval(calculator.display.value)"></td>
+               <td><input type="button" class="operator" name="plus" value="+" aria-label="plus" onclick="calculator.display.value += '+'"></td>
             </tr>
          </table>
       </form>
+   </main>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="calculator.js"></script>
